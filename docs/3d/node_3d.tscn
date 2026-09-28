@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dyn8l4gf7ffqs"]
+
+[ext_resource type="Script" uid="uid://df7lal3gaptff" path="res://node_3d.gd" id="1_r3fl7"]
+[ext_resource type="PackedScene" uid="uid://clwhmcyadlf8t" path="res://Dancing.fbx" id="2_jka67"]
+[ext_resource type="PackedScene" uid="uid://cj1hs0jislq51" path="res://Hip Hop Dancing.fbx" id="3_i5arm"]
+[ext_resource type="PackedScene" uid="uid://g6aw61e7umjm" path="res://Slow Jog Backwards.fbx" id="4_wc5p8"]
+
+[node name="Node3D" type="Node3D" unique_id=1153376648]
+script = ExtResource("1_r3fl7")
+
+[node name="Dancing" parent="." unique_id=722379002 instance=ExtResource("2_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.854612, 0, -4.4356923)
+
+[node name="Dancing2" parent="." unique_id=101970880 instance=ExtResource("3_i5arm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13492393, 0, -0.82636833)
+
+[node name="Dancing3" parent="." unique_id=69596113 instance=ExtResource("4_wc5p8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.484745, 0, -3.2421646)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=541449518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.2953596, 8.980355)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=379234377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.652235, 0)
+shadow_enabled = true
